@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Kevin Nisay">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- favicon -->
+		<link rel="shortcut icon" href="/images/logo/logo-white-m.png">
+		<link rel="apple-touch-icon" href="/images/logo/logo-white-m.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/images/logo/logo-white-m.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/images/logo/logo-white-m.png">
+
+		<title>Mystery </title>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+		<!-- styles -->
+		<link href="/css/plugins.css" rel="stylesheet" type="text/css">
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+	<body class="preloader dark-nav">
+		<!-- preloader-loading start -->
+		<div class="preloader__logoload-box">
+			<img class="preloader__logo" src="/images/logo/logo-white-m.png" alt="logo">
+		</div><!-- preloader-loading end -->
+
+		<!-- to top btn start 
+		<a href="#up" class="scroll-to-btn js-headroom js-midnight-color js-smooth-scroll js-pointer-large">
+			<span class="scroll-to-btn__box">
+				<span class="scroll-to-btn__arrow"></span>
+			</span>
+		</a>to top btn end -->	
+		
+		<!-- header-contact start -->
+		<div class="header-contact js-midnight-color js-headroom">
+			<div class="header-contact__flex">
+				<div class="header-contact__anim">
+					<a href="#" class="header-contact__btn center"><p>Facebook</p></a>
+					<a href="#" class="header-contact__btn center"><p>LinkedIn</p></a>
+					<a href="#" class="header-contact__btn center"><p>Instagram</p></a>
+				</div>
+			</div>
+		</div><!-- header-contact end -->
+		<!-- header-social start -->
+		<div class="header-social after-preloader-anim js-midnight-color js-headroom">
+			<ul class="list list_right hidden-box">
+				<li class="list__item">
+					<div class="hidden-box d-inline-block">
+						<a href="tel:0533970528" class="anim-slide js-pointer-small">
+							<i style="font-style:normal;     font-family: 'Avenir', sans-serif;
+							font-size: 11px;
+							font-weight: 600;
+							letter-spacing: 2px;"><p>CONTACT</p></i>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div><!-- header-social end -->
+
+		<!-- header start -->
+		<header class="fixed-header">
+			<!-- logo start -->
+			<div class="header-logo js-midnight-color js-headroom ">
+				<div class="hidden-box">
+					<a href="../index.html" class="header-logo__box js-pointer-large js-animsition-link">
+						<img class="header-logo__img white" src="/images/logo/logo-white-m.png" alt="logo" width="60px" height="60px">
+						<img class="header-logo__img black" src="/images/logo/logo-black-m.png" alt="logo" width="60px" height="60px">
+					</a>
+				</div>
+			</div><!-- logo end -->
+
+			<!-- menu-icon start || -->
+			<div class="menu-icon  js-pointer-large js-menu-open-close js-midnight-color js-headroom" style="z-index: 9999;  height: 27px">
+				<div class="menu-icon__box" style="height: 27px">
+					<span class="menu-icon__inner"></span>
+					<span class="menu-icon__close"></span>
+				</div>
+			</div> 
+		</header><!-- header end -->
+
+		<!-- navigation start -->
+		<nav class="nav-container pos-rel js-dropdown-active-box" style="z-index: 999;">
+			<!-- pos-rel start -->
+			<div class="pos-rel height-100perc">
+				<!-- dropdown close btn start -->
+				<div class="dropdown-close">
+					<div class="dropdown-close__inner js-dropdown-close js-pointer-large">
+						<span class="dropdown-close__arrow"></span>
+					</div>
+				</div><!-- dropdown close btn end -->
+
+				<!-- SVG BG
+				<div class="svgMenu_bg" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: 0.1;">
+					<svg id="menu_svg" width="1063" height="289" viewBox="0 0 1063 289" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path class="svg-pat" d="M48.8984 0.625L141.867 232.656L234.836 0.625H283.469V285H245.969V174.258L249.484 54.7266L156.125 285H127.414L34.25 55.3125L37.9609 174.258V285H0.460938V0.625H48.8984Z" fill="none" stroke="white" stroke-width="5"/>
+						<path class="svg-pat" d="M510.422 153.555H387.18V254.336H530.344V285H349.68V0.625H528.391V31.4844H387.18V122.891H510.422V153.555Z" fill="none" stroke="white" stroke-width="5"/>
+						<path class="svg-pat" d="M795.578 285H757.883L614.719 65.8594V285H577.023V0.625H614.719L758.273 220.742V0.625H795.578V285Z" fill="none" stroke="white" stroke-width="5"/>
+						<path class="svg-pat" d="M1062.38 0.625V193.984C1062.24 220.807 1053.78 242.747 1036.98 259.805C1020.32 276.862 997.661 286.432 969.016 288.516L959.055 288.906C927.935 288.906 903.13 280.508 884.641 263.711C866.151 246.914 856.776 223.802 856.516 194.375V0.625H893.625V193.203C893.625 213.776 899.289 229.792 910.617 241.25C921.945 252.578 938.091 258.242 959.055 258.242C980.279 258.242 996.49 252.578 1007.69 241.25C1019.02 229.922 1024.68 213.971 1024.68 193.398V0.625H1062.38Z" fill="none" stroke="white" stroke-width="5"/>
+					</svg>
+				</div>-->
+
+				<!-- menu-box start -->
+				<ul class="menu-box">
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box">
+						<a class="nav-btn large js-pointer-large" href="../services">
+							<span class="nav-btn__inner" data-text="Explore">Services</span>
+						</a>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box">
+						<a class="nav-btn large js-pointer-large" href="../about">
+							<span class="nav-btn__inner" data-text="Explore">About us</span>
+						</a>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box">
+						<a class="nav-btn large js-pointer-large" href="../results">
+							<span class="nav-btn__inner" data-text="Explore">Results</span>
+						</a>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box">
+						<a class="nav-btn large js-pointer-large" href="../clients">
+							<span class="nav-btn__inner" data-text="Explore">Who we serve</span>
+						</a>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box">
+						<a href="../contact/" class="nav-btn large js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Explore">Contact</span>
+						</a>
+					</li><!-- nav-btn-box end -->
+				</ul><!-- menu-box end -->
+				<!-- nav-information start -->
+				<div class="nav-information">
+					<!-- Logo -->
+					<div>
+						<div class="hidden-box d-inline-block">
+							<a href="../index.html"><div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim" style="font-family: Broadsheet; font-size: 40px;">
+								MYSTERY
+							</div></a>
+						</div>	
+					</div> 
+
+				</div><!-- nav-information end -->
+
+
+				<!-- nav-address start -->
+				<div class="nav-information-social">
+					<div class="nav-fade-anim js-nav-anim margin-top-10">
+							<span>FACEBOOK</span><span>INSTAGRAM</span><span>LINKEDIN</span>
+					</div>
+				</div> <!-- nav-address end -->
+
+
+			</div><!-- pos-rel end -->
+		</nav><!-- navigation end -->
+
+		<!-- main start -->
+		<main class="js-animsition-overlay" data-animsition-overlay="true">
+			<!-- pos-rel start -->
+			<section id="up" class="pos-rel bg-img-cover js-parallax-bg-2 about-hero-1">
+
+				<!-- bg-overlay
+				<div class="bg-overlay-black"></div> -->
+				
+				<!-- pos-rel start -->
+				<div class="pos-rel flex-min-height-100vh" style="
+					align-items: start;
+					padding-top: 110px;
+					">
+					<div class="padding-top-bottom-120 width-100perc after-preloader-anim">
+						<h2 class="headline-xl-broadsheet text-center">
+							<span class="hidden-box d-block">
+								<span class="anim-slide tr-delay-02">Create a Unique</span>
+							</span>
+							<span class="hidden-box d-block">
+								<span class="anim-slide tr-delay-03">Experience</span>
+							</span>
+						</h2>
+						<div class="margin-top-30 anim-fade tr-delay-08 cntr-div">
+							<a href="#about__point" class="js-pointer-large js-smooth-scroll">
+								<span class="border-btn__inner">Read more</span>
+							</a>
+						</div>
+						<!-- description start -->
+						<!-- description end -->
+						<div id="down" class="pos-rel section-bg-dark-1 about-banner-1">
+							<!-- pos-rel start -->
+							<div class="pos-rel flex-min-height-100vh" style="align-items: start;">
+								<!-- flex-container start -->
+								<div class="container small flex-container padding-top-40 padding-bottom-120" id="about__point">
+									<!-- column start -->
+									<div class="twelve-columns column-100-100 padding-top-20 ">
+										<div class="about-us-info">		
+											<h2>ABOUT US</h2>
+											<p class="body-text-m anim-text-reveal js-scrollanim">A private food and beverage investment and advisory company We provide a unique and focused 
+											source of private investment and strategic advice to exciting growth businesses and brands across 
+											the consumer sector.
+											</p>
+											<img class="js-img-scale" src="../images/backgrounds/about_banner.jpg">
+										</div>
+									</div><!-- column end -->
+								</div><!-- flex-container end -->
+							</div><!-- pos-rel end -->
+						</div>
+					</div>
+				</div><!-- pos-rel end -->
+			</section><!-- pos-rel end -->
+
+		<!-- pos-rel start -->
+		<div id="down" class="pos-rel section-bg-light-1 about__second__section"  data-midnight="black">
+			<!-- pos-rel start -->
+			<div class="pos-rel flex-min-height-100vh">
+				<!-- flex-container start -->
+				<div class="container small flex-container padding-top-120 padding-bottom-120">
+					<!-- column start -->
+					<div class="twelve-columns column-100-100 padding-top-100">
+						<div class="" style="text-align: center;">
+							<h2 class="a-section-2-heading"
+							data-aos="fade-up"
+							data-aos-delay="50"
+							data-aos-duration="900"
+							data-aos-easing="ease-in-out"
+							data-aos-mirror="true"
+							data-aos-once="false" >PASSION<br>STATEMENT</h2>
+							<img src="../images/logo/logo-black-m.png" style="
+							width: 50px;
+							-webkit-filter: contrast(0.1);
+							filter: contrast(0.1);
+							margin: 170px 0;
+							"/>
+							<h2 style="
+								font-family: 'Broadsheet', sans-serif;
+								text-align: center;
+								font-size: 4em;
+								line-height: .9;
+								font-weight: 300;
+								margin-bottom: 50px;
+								color: #918D74;
+								
+							" data-aos="fade"
+							data-aos-duration="900"
+							data-aos-easing="ease-in-out"
+							data-aos-mirror="true"
+							data-aos-once="false" > CONSULTING<br>PROCESS</h2>
+
+							<div class="about__item__info" data-aos="fade"
+							data-aos-duration="900"
+							data-aos-easing="ease-in-out"
+							data-aos-mirror="true"
+							data-aos-once="false">
+								<h2 class="subHeading">PROJECT ALIGNMENT</h2>
+								<p class="body-text-m js-scrollanim p-tag-proc">We begin by discussing your vision and ideas for the concept  —  
+									including menu design, service model, desired launch location and decor direction  — as well as your needs, budget and timeline.
+								</p>
+							</div>
+
+							<div class="about__item__info" data-aos="fade"
+							data-aos-duration="900"
+							data-aos-easing="ease-in-out"
+							data-aos-mirror="true"
+							data-aos-once="false">
+								<h2 class="subHeading">RESEARCH</h2>
+								<p class="body-text-m js-scrollanim p-tag-proc">We then create a strategic list of competitive concepts to analyze on a Discovery
+									Tour in either your home market or a saturated competitive market.
+								</p>
+							</div>
+
+							<div class="about__item__info" data-aos="fade"
+							data-aos-duration="900"
+							data-aos-easing="ease-in-out"
+							data-aos-mirror="true"
+							data-aos-once="false">
+								<h2 class="subHeading">DISCOVERY TOUR</h2>
+								<p class="body-text-m js-scrollanim p-tag-proc">Together, we’ll spend a designated number of days on the Discovery Tour surveying 
+									the market and analyzing each concept. From ticket times to tableware,this detailed but collaborative process will illustrate best 
+									practices and failures. At this stage, we begin to understand unmet customer needs while also identifying opportunities in the market.
+								</p>
+							</div>
+
+							<div class="about__item__info" data-aos="fade"
+							data-aos-duration="900"
+							data-aos-easing="ease-in-out"
+							data-aos-mirror="true"
+							data-aos-once="false">
+								<h2 class="subHeading">STRATEGY</h2>
+								<p class="body-text-m js-scrollanim p-tag-proc">In an all-day brand positioning session, we’ll distill insights and ideas from the tour 
+									while brainstorming your concept’s look and feel. Together,we’ll agree on strategies ranging from the menu shell and pricing to equipment 
+									needs and space requirements.
+								</p>
+							</div>
+							
+							<div class="about__item__info" data-aos="fade"
+							data-aos-duration="900"
+							data-aos-easing="ease-in-out"
+							data-aos-mirror="true"
+							data-aos-once="false">
+								<h2 class="subHeading">DOCUMENTATION</h2>
+								<p class="body-text-m js-scrollanim p-tag-proc">Synergy works internally to produce the associated deliverables which include a Concept Book, 
+									a Financial Pro Forma, a Business Plan, a Space Plan and as-needed, a presentation documenting all this for investors and landlords.
+								</p>
+							</div>
+						</div>
+					</div><!-- column end -->
+
+					
+				</div><!-- flex-container end -->
+			</div><!-- pos-rel end -->
+		</div><!-- pos-rel end -->
+
+		<!-- pos-rel start -->
+		<section id="up" class="pos-rel bg-img-cover" style="background-image:url(../images/backgrounds/about-hero-2.jpg);height: 1560px;">
+			<!-- bg-overlay -->
+			<div class="bg-overlay-black"></div>
+			<!-- pos-rel start -->
+			<div class="pos-rel flex-min-height-100vh" style="
+				align-items: center;" >
+				<!-- description end -->
+				<div id="down" class="pos-rel section-bg-dark-1 m-t-section">
+					<!-- pos-rel start -->
+					<div class="pos-rel flex-min-height-100vh" style="align-items: start; min-height: auto;" >
+						<!-- flex-container start -->
+						<div class="flex-container" style="
+							padding: 0!important;
+							margin: 0 !important;
+							width: 100%;
+						">
+							<!-- column start -->
+							<div class="twelve-columns column-100-100">
+								<div class="about__third__section">
+									<img class="js-scrollanim js-scrollanim-active js-img-scale" src="../images/backgrounds/about_banner.jpg">		
+									<p class="body-text-m anim-text-reveal js-scrollanim js-scrollanim-active padding-top-40" style="
+										padding: 50px 60px;
+										text-align: center;
+										text-transform: uppercase;
+										line-height: 1.3;
+										font-size: 1rem;
+									">The meticulous attention to detail is the secret of our ideal team,
+										WE ARE DIGITAL ARTISANS IN THE INFINITE PURSUIT OF DELIGHTFUL VISUALS, 
+										MEANINGFUL STORIES & TOUCHING EXPERIENCES.
+									</p>
+								</div>
+							</div><!-- column end -->
+						</div><!-- flex-container end -->
+					</div><!-- pos-rel end -->
+				</div>
+				<div class=" width-100perc after-preloader-anim  anim-slide">
+					<img src="../images/logo/logo-white-m.png" style="
+					width: 50px;
+					margin: 0 0 90px 0;
+					position: relative;
+					left: 50%;
+					transform: translate(-50%, -80px);
+					"/>
+					<h2 class="text-center headline-xl-broadsheet-custom padding-bottom-60"  data-aos="fade"
+					data-aos-offset="200"
+					data-aos-duration="900"
+					data-aos-easing="ease-in-out"
+					data-aos-mirror="true"
+					data-aos-once="false">
+						<span class="hidden-box d-block">
+							<span class="anim-slide tr-delay-02">Meet The</span>
+						</span>
+						<span class="hidden-box d-block">
+							<span class="anim-slide tr-delay-03">Team</span>
+						</span>
+					</h2>
+					<div class="anim-fade twelve-columns about__fourth__section">
+						<p  data-aos="fade"
+						data-aos-offset="200"
+						data-aos-delay="50"
+						data-aos-duration="900"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false">
+						Our Head Office consists of a core team of strategic, investment and operational professionals. 
+						Our management team is based IN KSA and offers an international experience as well as deep regional knowledge, 
+						an unrivaled network, and long-term business relationships.
+						</p>
+						<p  data-aos="fade"
+						data-aos-offset="200"
+						data-aos-delay="50"
+						data-aos-duration="1100"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false">
+						We focus on delivering high-value propositions, creative solutions and deliver tangible results by bringing 
+						the best-in class team together to deliver excellence.	
+						</p>
+						<!--<p  data-aos="fade"
+						data-aos-offset="200"
+						data-aos-delay="50"
+						data-aos-duration="1200"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false">
+							Rooted in a European work ethic and proudly established in Dubai, United Arab Emirates, all of our work is done from our gorgeous 
+							studio in the heart of Dubai. This allows us greater control over our output, as well as the abilty to create a true family atmosphere 
+							with our staff and clients. Our door is always open for a good cup of coffee and conversation.
+						</p>-->
+					</div>
+				</div>
+			</div><!-- pos-rel end -->
+		</section><!-- pos-rel end -->
+		
+		<!-- team start -->
+		<section id="down" class="pos-rel section-bg-light-1 section-bg-dark-2" style="background: #030304;">
+			<!-- lines-container start -->
+			<div class="lines-container pos-rel black-lines padding-top-bottom-120">
+				<!-- title start -->
+				<p class="padding-bottom-60" 
+				data-aos="fade"
+				data-aos-delay="50"
+				data-aos-duration="700"
+				data-aos-easing="ease-in-out"
+				data-aos-once="false" style="text-align: center;">SEE ALL MEMBERS</p>
+				<h2 class="headline-xxl text-center js-scrollanim hidden-box js-scrollanim-active" 
+				data-aos="fade"
+				data-aos-delay="50"
+				data-aos-duration="900"
+				data-aos-easing="ease-in-out"
+				data-aos-once="false">
+					<span class="anim-slide" style="font-family: 'Broadsheet', sans-serif;">
+						Made in KSA
+					</span>
+				</h2><!-- title end -->
+
+				<!-- flex-container start -->
+				<div class="flex-container flex-align-center padding-top-60">
+					<!-- column start -->
+					<div class="four-columns column-50-100 padding-top-20" 
+					data-aos="fade-right"
+					data-aos-delay="50"
+					data-aos-duration="700"
+					data-aos-easing="ease-in-out"
+					data-aos-once="false">
+						<!-- hover-box start -->
+						<div class="line-col-l-r-margin-20 hover-box hidden-box pos-rel">
+							<div class="hover-box js-touch-hover-scroll">
+								<!-- img start -->
+								<img class=" in" src="../images/team/T-1.jpg" alt="Ghanem Sadeq">
+								<!-- img end -->
+							</div>
+						</div><!-- hover-box end -->
+					</div><!-- column end -->
+
+					<!-- column start -->
+					<div class="four-columns column-50-100 padding-top-20" 
+					data-aos="fade"
+					data-aos-delay="50"
+					data-aos-duration="700"
+					data-aos-easing="ease-in-out"
+					data-aos-once="false">
+						<!-- hover-box start -->
+						<div class="line-col-l-r-margin-20 hover-box hidden-box pos-rel">
+							<div class="hover-box js-touch-hover-scroll">
+								<!-- img start -->
+								<img class=" in" src="../images/team/T-1.jpg" alt="Ghanem Sadeq">
+								<!-- img end -->
+							</div>
+						</div><!-- hover-box end -->
+					</div><!-- column end -->
+
+					<!-- column start -->
+					<div class="four-columns column-50-100 padding-top-20" 
+					data-aos="fade-left"
+					data-aos-delay="50"
+					data-aos-duration="700"
+					data-aos-easing="ease-in-out"
+					data-aos-once="false">
+						<!-- hover-box start -->
+						<div class="line-col-l-r-margin-20 hover-box hidden-box pos-rel">
+							<div class="hover-box js-touch-hover-scroll">
+								<!-- img start -->
+								<img class=" in" src="../images/team/T-1.jpg" alt="Ghanem Sadeq">
+								<!-- img end -->
+							</div>
+						</div><!-- hover-box end -->
+					</div><!-- column end -->
+				</div><!-- flex-container end -->
+			</div><!-- lines-container end -->
+		</section><!-- team end -->	
+
+		
+	</main><!-- main end -->
+
+	<!-- footer start -->
+	<footer class="pos-rel bg-img-cover" style="background-image:url(/images/backgrounds/man-holding-videocamera-standing-in-studio-3379943.jpg)" >
+			<!-- next project start -->
+		<section class="pos-rel bg-img-cover  " style="background-image:url(../images/backgrounds/man-holding-videocamera-standing-in-studio-3379943.jpg)" >
+			<!-- bg-overlay -->
+			<div id="overlay_" class="bg-overlay-black"></div>
+			<!-- pos-rel start -->
+			<div class="pos-rel flex-min-height-100vh" >
+				<div class="padding-top-bottom-120 container text-center">
+					<div class="js-scrollanim">
+						<span class="subhead-s anim-fade">LET US HELP YOU</span>
+
+						<!-- title start -->
+						<div class="margin-top-10 margin-bottom-30" style="margin-bottom: 130px;" id="footer_link">
+							<a href="#" class="d-inline-block hidden-box js-pointer-large js-animsition-link">
+								<h2 class="headline-xxxxl anim-slide" style="font-family: 'Broadsheet', sanserif;">Let Mystery Talk <br> with you</h2>
+							</a>
+						</div><!-- title end -->
+
+						<!-- button start -->
+						<a href="../contact/" class="skew-btn js-pointer-large js-animsition-link anim-fade tr-delay-04">
+							<span class="skew-btn__box">
+								<span class="skew-btn__content">Contact us</span>
+								<span class="skew-btn__arrow"></span>
+							</span>
+						</a><!-- button end -->
+					</div>
+				</div>
+			</div><!-- pos-rel end -->
+		</section><!-- next project end -->
+	</footer><!-- footer end -->
+
+
+		<!-- scripts -->
+		<script src="/js/plugins.js"></script>
+		<script src="/js/footer-reveal.js"></script>
+		<script src="/js/main.js"></script>
+		<script src="/js/footer-reveal_init.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		  AOS.init();
+		</script>
+
+		<script>
+			$(function() {
+				$('#footer_link').hover(function() { 
+					$('#overlay_').fadeOut(); 
+				}, function() { 
+					$('#overlay_').fadeIn(); 
+				});
+
+
+
+
+				/* === click trigger for SVG ===
+				
+				$("#trigger-anim").click(function() {
+					setTimeout(function(){
+						$('path').addClass('svg-animation');
+						$('#menu_svg').addClass('svg-fill-anim');
+					},750)
+					
+				});
+				
+				$('#trigger-anim-2').click(function () {
+					$('path').addClass('close-anim')
+				}); */
+
+
+
+
+
+			});
+
+			
+		</script>
+		
+		
+	</body>
+</html>
