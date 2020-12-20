@@ -350,8 +350,8 @@ SOFTWARE.
 
 		/* 2. Animsition preloader */
 		$(".js-animsition-overlay").animsition({
-			inClass: 'overlay-slide-in-right',
-			outClass: 'overlay-slide-out-right',
+			inClass: 'fade-in',
+			outClass: 'fade-out',
 			inDuration: 1,
 			outDuration: 1500,
 			linkElement: '.js-animsition-link',
@@ -985,13 +985,14 @@ SOFTWARE.
 		var first_name = $("#first_name").val().trim();
 		var last_name = $("#last_name").val().trim();
 		var email = $("#email").val().trim();
+		var number = $("#number").val().trim();
 		var message = $("#message").val().trim();
 
 		$.ajax({
-			url: '../mail.php',
+			url: '../ajax/mai.php',
 			type: 'POST',
 			cache: false,
-			data: {'first_name': first_name, 'last_name': last_name, 'email': email, 'message': message},
+			data: {'first_name': first_name, 'last_name': last_name, 'email': email, 'number': number, 'message': message},
 			dataType: 'html',
 			beforeSend: function() {
 				$("#send").addClass("js-active");

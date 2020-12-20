@@ -6789,11 +6789,11 @@ body .js-filter-button.js-filter-button-active.fill-btn:after {
 }
 
 .flip-btn:before {
-	color: #fff;
+    color: #000;
 }
 
 .flip-btn:after {
-	color: var(--main-color);
+	color: #000;
 	-webkit-transform: translateY(-170%);
 	    -ms-transform: translateY(-170%);
 	        transform: translateY(-170%);
@@ -12173,6 +12173,7 @@ textarea.form-input {
 
 .popup-alert {
 	margin: 30px 0;
+	color: #000000;
 }
 
 .form-box {
@@ -12838,6 +12839,16 @@ input[name="message"]::placeholder {
 	text-align: left; 
 } 
 
+.explore-more{
+	transition: all .4s ease-in-out;
+	font-weight: 600;
+}
+
+
+.explore-more:hover {
+	color: #000;
+}
+
 /*================= Who we serve =======================*/
 .scrollUnable {
 	overflow-y: hidden !important;
@@ -13175,6 +13186,9 @@ video#myVideo {
 		left: 42%;
 		width: 69%;
 	}
+	video#myVideo {
+		max-width: 200% ;
+	}
 
 }
 
@@ -13204,7 +13218,6 @@ video#myVideo {
 		font-size: 13px;
 	}
 
-	
 
 
 }

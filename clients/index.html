@@ -238,13 +238,13 @@
                     <h2 class="section1-heading animate__fadeIn animate__slow" style="line-height: .9;">Made<br>
                         In KSA</h2>
                     <p class="section1-info">Our Head Office consists of a core team of strategic, investment, and operational professionals. Our management team is based IN KSA and offers an international experience as well as deep regional knowledge, 
-                        an unrivaled network, and long-term business relationships.
+						an unrivaled network, and long-term business relationships.
                     </p>
                 </div>
  
                 <div class="section" style="background:url(../images/backgrounds/man-holding-videocamera-standing-in-studio-3379943.jpg)center; background-size: cover;">
                     <!-- bg-overlay -->
-				    <div class="bg-overlay-black"></div>
+				    <div class="bg-overlay-black" id="overlay_"></div>
                     <!-- pos-rel start -->
                     <div class="pos-rel flex-min-height-100vh" >
                         <div class="padding-top-bottom-120 container text-center">
@@ -252,14 +252,19 @@
                                 <span class="subhead-s anim-fade">LET US HELP YOU</span>
 
                                 <!-- title start -->
-                                <div class="margin-top-10 margin-bottom-30" style="margin-bottom: 130px;">
+                                <div class="margin-top-10 margin-bottom-30" style="margin-bottom: 130px;" id="footer_link">
                                     <a href="#" class="d-inline-block hidden-box js-pointer-large js-animsition-link">
                                         <h2 class="headline-xxxxl anim-slide" style="font-family: 'Broadsheet', sanserif;">Let Mystery Talk <br> with you</h2>
                                     </a>
                                 </div><!-- title end -->
 
                                 <!-- button start -->
-                                <a href="../contact" >Contact us</a>
+                                <a href="../contact/" class="skew-btn js-pointer-large js-animsition-link anim-fade tr-delay-04">
+									<span class="skew-btn__box">
+										<span class="skew-btn__content">Contact us</span>
+										<span class="skew-btn__arrow"></span>
+									</span>
+								</a>
                             </div>
                         </div>
                     </div><!-- pos-rel end -->
@@ -290,6 +295,15 @@
                 $('#fullpage').fullpage({
                     anchors:['who-we-serve', 'restaurant', 'thirdSection', 'fourthSection', 'fifthSection', 'sixthSection', 'meetTheTeam', 'contactUs']
                 });
+
+
+
+				/* footer overlay toggle*/
+				$('#footer_link').hover(function() { 
+					$('#overlay_').fadeOut(); 
+				}, function() { 
+					$('#overlay_').fadeIn(); 
+				});
             });
             
             /* $(".clickHere").click(function(){
