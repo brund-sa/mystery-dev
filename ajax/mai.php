@@ -1,5 +1,5 @@
 <?php
-$to = "kevin@brund.run";
+$to = "info@mystery-consult.com";
 $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];
 $email = $_POST['email'];

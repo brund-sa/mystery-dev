@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Kevin Nisay">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- favicon -->
+		<link rel="shortcut icon" href="/images/logo/logo-white-m.png">
+		<link rel="apple-touch-icon" href="/images/logo/logo-white-m.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/images/logo/logo-white-m.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/images/logo/logo-white-m.png">
+
+		<title>Mystery </title>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+		<!-- styles -->
+		<link href="/css/plugins.css" rel="stylesheet" type="text/css">
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+	<body class="preloader dark-nav">
+		<!-- preloader-loading start -->
+		<div class="preloader__logoload-box">
+			<img class="preloader__logo" src="/images/logo/logo-white-m.png" alt="logo">
+		</div><!-- preloader-loading end -->
+
+		<!-- to top btn start  -->	
+		<a href="#up" class="scroll-to-btn js-headroom js-midnight-color js-smooth-scroll js-pointer-large">
+			<span class="scroll-to-btn__box">
+				<span class="scroll-to-btn__arrow"></span>
+			</span>
+		</a>		<!-- to top btn end -->	
+		
+		<!-- header-contact start -->
+		<div class="header-contact js-midnight-color js-headroom  after-preloader-anim ">
+			<div class="header-contact__flex">
+				<div class="header-contact__anim">
+					<a href="http://facebook.com" class="header-contact__btn center anim-slide "><p>Facebook</p></a><br>
+					<a href="http://linkedin.com" class="header-contact__btn center anim-slide tr-delay-03"><p>LinkedIn</p></a><br>
+					<a href="http://instagram.com" class="header-contact__btn center anim-slide tr-delay-05"><p>Instagram</p></a>
+				</div>
+			</div>
+		</div><!-- header-contact end -->
+		<!-- header-social start -->
+		<div class="header-social after-preloader-anim js-midnight-color js-headroom">
+			<ul class="list list_right">
+				<li class="list__item">
+					<div class=" d-inline-block">
+						<a href="tel:0533970528" class="anim-slide  js-pointer-small">
+							<i style="font-style:normal;     font-family: 'Avenir', sans-serif;
+							font-size: 11px;
+							font-weight: 600;
+							letter-spacing: 2px;"><p>CONTACT</p></i>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div><!-- header-social end -->
+
+		<!-- header start -->
+		<header class="fixed-header ">
+			<!-- logo start -->
+			<div class="header-logo js-midnight-color js-headroom after-preloader-anim ">
+				<div class="hidden-box">
+					<a href="../index.html" class="header-logo__box js-pointer-large js-animsition-link anim-slide">
+						<img class="header-logo__img white" src="../images/logo/whitemsm-logo.svg" alt="logo" >
+						<img class="header-logo__img black" src="../images/logo/black-msm-logo.svg" alt="logo" >
+					</a>
+				</div>
+			</div><!-- logo end -->
+
+			<!-- menu-icon start || -->
+			<div class="menu-icon  js-pointer-large js-menu-open-close js-midnight-color js-headroom" style="z-index: 9999;  height: 27px">
+				<div class="menu-icon__box" style="height: 27px">
+					<span class="menu-icon__inner"></span>
+					<span class="menu-icon__close"></span>
+				</div>
+			</div> 
+		</header><!-- header end -->
+
+		<!-- navigation start -->
+		<nav class="nav-container pos-rel" style="z-index: 999;">
+			<!-- pos-rel start -->
+			<div class="pos-rel height-100perc">
+				<!-- dropdown close btn start -->
+				<div class="dropdown-close">
+					<div class="dropdown-close__inner">
+						<span class="dropdown-close__arrow"></span>
+					</div>
+				</div><!-- dropdown close btn end -->
+
+				<!-- SVG BG
+				<div class="svgMenu_bg" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: 0.1;">
+					<svg id="menu_svg" width="1063" height="289" viewBox="0 0 1063 289" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path class="svg-pat" d="M48.8984 0.625L141.867 232.656L234.836 0.625H283.469V285H245.969V174.258L249.484 54.7266L156.125 285H127.414L34.25 55.3125L37.9609 174.258V285H0.460938V0.625H48.8984Z" fill="none" stroke="white" stroke-width="5"/>
+						<path class="svg-pat" d="M510.422 153.555H387.18V254.336H530.344V285H349.68V0.625H528.391V31.4844H387.18V122.891H510.422V153.555Z" fill="none" stroke="white" stroke-width="5"/>
+						<path class="svg-pat" d="M795.578 285H757.883L614.719 65.8594V285H577.023V0.625H614.719L758.273 220.742V0.625H795.578V285Z" fill="none" stroke="white" stroke-width="5"/>
+						<path class="svg-pat" d="M1062.38 0.625V193.984C1062.24 220.807 1053.78 242.747 1036.98 259.805C1020.32 276.862 997.661 286.432 969.016 288.516L959.055 288.906C927.935 288.906 903.13 280.508 884.641 263.711C866.151 246.914 856.776 223.802 856.516 194.375V0.625H893.625V193.203C893.625 213.776 899.289 229.792 910.617 241.25C921.945 252.578 938.091 258.242 959.055 258.242C980.279 258.242 996.49 252.578 1007.69 241.25C1019.02 229.922 1024.68 213.971 1024.68 193.398V0.625H1062.38Z" fill="none" stroke="white" stroke-width="5"/>
+					</svg>
+				</div>-->
+
+				<!-- menu-box start -->
+				<ul class="menu-box">
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box">
+						<a class="nav-btn large js-animsition-link js-pointer-large" href="../services">
+							<span class="nav-btn__inner" data-text="Explore">Services</span>
+						</a>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box">
+						<a class="nav-btn large js-animsition-link js-pointer-large" href="../about">
+							<span class="nav-btn__inner" data-text="Explore">About us</span>
+						</a>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box">
+						<a class="nav-btn large js-animsition-link js-pointer-large" href="../results">
+							<span class="nav-btn__inner" data-text="Explore">Results</span>
+						</a>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box">
+						<a class="nav-btn large js-animsition-link js-pointer-large" href="../clients">
+							<span class="nav-btn__inner" data-text="Explore">Who we serve</span>
+						</a>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box">
+						<a href="../contact/" class="nav-btn large js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Explore">Contact</span>
+						</a>
+					</li><!-- nav-btn-box end -->
+				</ul><!-- menu-box end -->
+				<!-- nav-information start -->
+				<div class="nav-information">
+					<!-- Logo -->
+					<div>
+						<div class="hidden-box d-inline-block">
+							<a href="../index.html"><div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim js-animsition-link" style="font-family: Broadsheet; font-size: 40px;">
+								MYSTERY
+							</div></a>
+						</div>	
+					</div> 
+
+				</div><!-- nav-information end -->
+
+
+				<!-- nav-address start -->
+				<div class="nav-information-social">
+					<div class="nav-fade-anim js-nav-anim margin-top-10">
+							<span>FACEBOOK</span><span>INSTAGRAM</span><span>LINKEDIN</span>
+					</div>
+				</div> <!-- nav-address end -->
+
+
+			</div><!-- pos-rel end -->
+		</nav><!-- navigation end -->
+
+		<!-- main start -->
+		<main class="js-animsition-overlay" data-animsition-overlay="true">
+			<section id="up" class="pos-rel js-parallax-bg-2 about-hero-1" style="background-image: url(../images/backgrounds/team-hero-bg.webp);">
+				<!-- pos-rel start -->
+				<div class="pos-rel flex-min-height-100vh" style="
+					align-items: start;
+					padding-top: 110px;
+					">
+					<div class="width-100perc after-preloader-anim teamHero-wrap">
+						<h2 class="headline-xl-broadsheet text-center teamHeading">
+							<span class="d-block">
+								<span class="anim-slide">MEET THE</span>
+							</span>
+							<span class="d-block">
+								<span class="anim-slide">TEAM</span>
+							</span>
+						</h2>
+					</div>
+
+					<!-- description end -->
+					<div id="down" class="team-banner">
+						<!-- pos-rel start -->
+						<div class="pos-rel flex-min-height-100vh" style="align-items: start;">
+							<!-- flex-container start -->
+							<div class="container small flex-container padding-top-40 padding-bottom-120" id="about__point">
+								<!-- column start -->
+								<div class="twelve-columns column-100-100 padding-top-20 ">
+									<div class="about__third__section text-center">
+										<img class="js-scrollanim js-scrollanim-active js-img-scale teamPicture" src="../images/team/ghanem.jpg"  data-aos="fade"
+										data-aos-offset="10"
+                                        data-aos-easing="ease-in-out"
+                                        data-aos-mirror="true"
+                                        data-aos-once="false">
+									</div>
+								</div><!-- column end -->
+							</div><!-- flex-container end -->
+						</div><!-- pos-rel end -->
+					</div>
+				</div><!-- pos-rel end -->
+			</section><!-- pos-rel end -->
+
+			<!-- pos-rel start -->
+			<div id="down" class="pos-rel section-bg-light-1 team__second__section"  data-midnight="black">
+				<!-- pos-rel start -->
+				<div class="pos-rel flex-min-height-100vh">
+					<!-- flex-container start -->
+					<div class="container small flex-container padding-top-120 padding-bottom-120 aboutPassionStatement">
+						<!-- column start -->
+						<div class="twelve-columns column-100-100 padding-top-100">
+							<div class="" style="text-align: center;">
+								<h2 class="t-section-2-heading"
+								data-aos="fade-up"
+								data-aos-delay="50"
+								data-aos-duration="900"
+								data-aos-easing="ease-in-out"
+								data-aos-mirror="true"
+								data-aos-once="false" >MR. GHANEM<br>SADEQ</h2>
+								
+								
+								<p class="body-text-m js-scrollanim p-tag-proc">
+									My high levels of concentration and excellent organizational skills have helped me 
+									achieve a strong academic record which reflects my attentiveness and commitment to 
+									success.
+								</p>
+								<img src="../images/logo/logo-black-m.png" style="
+									width: 45px;
+									-webkit-filter: contrast(0.1);
+									filter: contrast(0.1);
+									margin: 90px 0;
+								"/>
+								<p class="body-text-m js-scrollanim p-tag-proc">I was able to form a comprehensive idea 
+									of ​​ways to operate restaurants and move away as much as possible from all obstacles 
+									in operation and my love was to produce more than one successful product in the local 
+									market Helping power to build ideas and implement...
+								</p>
+								
+							</div>
+						</div><!-- column end -->
+
+						
+					</div><!-- flex-container end -->
+				</div><!-- pos-rel end -->
+			</div><!-- pos-rel end -->
+
+			<!-- pos-rel start -->
+			<section id="up" class="pos-rel bg-img-cover" style="background-image:url(../images/backgrounds/team-hero-bg2.webp);height: 1560px; background-position: bottom center;">
+				
+				<!-- pos-rel start -->
+				<div class="pos-rel flex-min-height-100vh" style="
+					align-items: start;" >
+
+					<div class=" width-100perc after-preloader-anim  anim-slide">
+						<h2 class="text-center headline-xl-broadsheet-custom padding-bottom-60 team__section__dos"  data-aos="fade"
+						data-aos-offset="200"
+						data-aos-duration="900"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false">
+							<span class="hidden-box d-block">
+								<span class="anim-slide tr-delay-02">I Did It!</span>
+							</span>
+							<span class="hidden-box d-block">
+								<span class="anim-slide tr-delay-03">
+									Again&Again</span>
+							</span>
+						</h2>
+						<div class="anim-fade twelve-columns team__kwatro__section">
+							<p  data-aos="fade"
+							data-aos-offset="200"
+							data-aos-delay="50"
+							data-aos-duration="900"
+							data-aos-easing="ease-in-out"
+							data-aos-mirror="true"
+							data-aos-once="false">
+							During 23 years of work in the Saudi market in the field of food and drink service, 
+							and for more than 10 different types of restaurants
+
+							</p>
+						</div>
+					</div>
+				</div><!-- pos-rel end -->
+			</section><!-- pos-rel end -->
+			
+			<!-- pos-rel start -->
+			<section id="up" class="pos-rel bg-img-cover" style="background-image:url(../images/backgrounds/team__3.webp);height: auto; background-position: bottom center;">
+				
+				<!-- pos-rel start -->
+				<div class="pos-rel flex-min-height-100vh" style="
+					align-items: center;" >
+
+					<!-- info start -->
+					<!-- pos-rel start -->
+					<div class="pos-rel padding-top-bottom-120 ">
+						<!-- title start -->
+						<h2 class="headline-xxl text-center js-scrollanim hidden-box team__section fyi">
+							<span class="anim-slide">
+								For your information
+							</span>
+						</h2><!-- title end -->
+
+						<!-- js-3-view-slider start -->
+						<div class="js-3-view-slider padding-top-bottom-90 hidden-box pos-rel remove-mobile" style="padding-bottom:35% ;">
+							<!-- swiper-wrapper start -->
+							<div class="swiper-wrapper js-slider-scroll-anim remove-mobile">
+								<!-- swiper-slide start -->
+								<div class="swiper-slide">
+									<!-- anim-img-scale start -->
+									<div class="anim-img-scale hover-box">
+										<img class="anim-img-scale__inner" src="../images/team/info_1.webp" >
+
+									</div><!-- anim-img-scale end -->
+
+								</div><!-- swiper-slide end -->
+
+								<!-- swiper-slide start -->
+								<div class="swiper-slide">
+									<!-- anim-img-scale start -->
+									<div class="anim-img-scale hover-box">
+										<img class="anim-img-scale__inner" src="../images/team/info_2.webp">
+									</div><!-- anim-img-scale end -->
+								</div><!-- swiper-slide end -->
+
+								<!-- swiper-slide start -->
+								<div class="swiper-slide">
+									<!-- anim-img-scale start -->
+									<div class="anim-img-scale hover-box">
+										<img class="anim-img-scale__inner" src="../images/team/info_3.webp">
+									</div><!-- anim-img-scale end -->
+								</div><!-- swiper-slide end -->
+
+								
+
+							
+							</div><!-- js-3-view-slider end -->
+						</div><!-- pos-rel end -->
+
+					<div class=" width-100perc after-preloader-anim  anim-slide team___footer">
+						<h2 class="text-center headline-xl-broadsheet-custom padding-bottom-60 teamHeading" data-aos="fade"
+						>
+							<span class="hidden-box d-block">
+								<span class="anim-slide tr-delay-02">Was That</span>
+							</span>
+							<span class="hidden-box d-block">
+								<span class="anim-slide tr-delay-03">Exciting?</span>
+							</span>
+						</h2>
+						<div class="anim-fade twelve-columns about__fourth__section" style="width:100%; text-align: center;">
+							<p  data-aos="fade">
+							<!-- button start -->
+							<a href="../contact/" class="skew-btn js-pointer-large js-animsition-link anim-fade tr-delay-04">
+								<span class="skew-btn__box">
+									<span class="skew-btn__content">LET'S TALK </span>
+									<span class="skew-btn__arrow"></span>
+								</span>
+							</a><!-- button end -->
+							</p>
+						</div>
+					</div>
+				</div><!-- pos-rel end -->
+				<p style="position: absolute; bottom: 1%; text-align: center;    left: 50%;
+				transform: translate(-50%);">ALL RIGHTS RESERVED © Mystery - 2020</p>
+			</section><!-- pos-rel end -->
+		</main><!-- main end -->
+
+	
+
+
+		<!-- scripts -->
+		<script src="/js/plugins.js"></script>
+		<script src="/js/main.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		  AOS.init();
+		</script>
+		
+		
+	</body>
+</html>

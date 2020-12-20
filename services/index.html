@@ -21,103 +21,51 @@
 		<!-- styles -->
 		<link href="../css/plugins.css" rel="stylesheet" type="text/css">
 		<link href="../css/style.css" rel="stylesheet" type="text/css">
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<style>
-			body {
-				margin: 0;
-				border: 0;
-				background-color: #000;
+			.services-arrow {
+				animation: animation__1 2.5s forwards 3s, animation__2 2.5s forwards 3s;
+				animation-iteration-count:infinite;
 			}
 
-			#content-block {
-				position: relative;
-				overflow: hidden;
-			}
-
-			.parallax-slide {
-				position: relative;
-				height: 100vh;
-			}
-
-			.parallax-clip {
-				height: 100%;
-				position: absolute;
-				width: 100%;
-				left: 0px;
-				top: 0px;
-				/*clip: rect(auto, auto, auto, auto);*/
-			}
-
-			.fixed-parallax {
-				position: relative;
-				width: 100%;
-				height: 100%;
-				left: 0;
-				top: 0;
-				background-size: cover;
-				background-position: center top;
-				background-attachment: fixed;
-				/* -webkit-transform: translateZ(0); /* necessary for iOS! */
-			}
-
-
-			/* used only as overlay for the images,
-			darkens it a little in this case */
-			.fixed-parallax:before {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				left: 0;
-				top: 0;
-				background: rgba(0, 0, 0, 0.2);
-				content: "";
-			}
-
-
-			/* CSS specific to iOS devices */ 
-			@supports (-webkit-overflow-scrolling: touch) {
-				.parallax-clip {
-					clip: rect(auto, auto, auto, auto);
-				}
-				.fixed-parallax {
-					position: fixed;
-					background-attachment: unset;
-					-webkit-transform: translateZ(0); /* necessary for iOS! */
+			@keyframes animation__1 {
+				from {
+					opacity: 0;
+				} to {
+					opacity: 1;
 				}
 			}
 
-
+			@keyframes animation__2 {
+				0% {
+					bottom: 11%;
+				}  100% {
+					bottom: 8%
+				}
+			}
 		</style>
 	</head>
-	<body class="preloader dark-nav">
+	<body class="preloader dark-nav"  style="overflow-y:hidden;">
 		<!-- preloader-loading start -->
 		<div class="preloader__logoload-box">
 			<img class="preloader__logo" src="../images/logo/logo-white-m.png" alt="logo">
 		</div><!-- preloader-loading end -->
-
-		<!-- to top btn start to top btn end -->	
-		<a href="#up" class="scroll-to-btn js-headroom js-midnight-color js-smooth-scroll js-pointer-large">
-			<span class="scroll-to-btn__box">
-				<span class="scroll-to-btn__arrow"></span>
-			</span>
-		</a> 
-		
+		<!-- social media -->
 		<!-- header-contact start -->
-		<div class="header-contact js-midnight-color js-headroom">
+		<div class="header-contact js-midnight-color js-headroom  after-preloader-anim ">
 			<div class="header-contact__flex">
 				<div class="header-contact__anim">
-					<a href="#" class="header-contact__btn center"><p>Facebook</p></a>
-					<a href="#" class="header-contact__btn center"><p>LinkedIn</p></a>
-					<a href="#" class="header-contact__btn center"><p>Instagram</p></a>
+					<a href="http://facebook.com" class="header-contact__btn center anim-slide"><p>Facebook</p></a><br>
+					<a href="http://linkedin.com" class="header-contact__btn center anim-slide tr-delay-03"><p>LinkedIn</p></a><br>
+					<a href="http://instagram.com" class="header-contact__btn center anim-slide tr-delay-05"><p>Instagram</p></a>
 				</div>
 			</div>
 		</div><!-- header-contact end -->
 		<!-- header-social start -->
 		<div class="header-social after-preloader-anim js-midnight-color js-headroom">
-			<ul class="list list_right hidden-box">
+			<ul class="list list_right">
 				<li class="list__item">
-					<div class="hidden-box d-inline-block">
-						<a href="tel:0533970528" class="anim-slide js-pointer-small">
+					<div class=" d-inline-block">
+						<a href="tel:+966 545 488 488" class="anim-slide js-pointer-small">
 							<i style="font-style:normal;     font-family: 'Avenir', sans-serif;
 							font-size: 11px;
 							font-weight: 600;
@@ -129,13 +77,13 @@
 		</div><!-- header-social end -->
 
 		<!-- header start -->
-		<header class="fixed-header">
+		<header class="fixed-header ">
 			<!-- logo start -->
-			<div class="header-logo js-midnight-color js-headroom ">
+			<div class="header-logo js-midnight-color js-headroom after-preloader-anim ">
 				<div class="hidden-box">
-					<a href="../index.html" class="header-logo__box js-pointer-large js-animsition-link">
-						<img class="header-logo__img white" src="../images/logo/logo-white-m.png" alt="logo" width="60px" height="60px">
-						<img class="header-logo__img black" src="../images/logo/logo-black-m.png" alt="logo" width="60px" height="60px">
+					<a href="../home.html" class="header-logo__box js-pointer-large js-animsition-link anim-slide">
+						<img class="header-logo__img white" src="/images/logo/logo-white-m.png" alt="logo" width="47px" height="47px">
+						<img class="header-logo__img black" src="/images/logo/logo-black-m.png" alt="logo" width="47px" height="47px">
 					</a>
 				</div>
 			</div><!-- logo end -->
@@ -164,36 +112,36 @@
 				<ul class="menu-box">
 					<!-- nav-btn-box start -->
 					<li class="nav-btn-box">
-						<a class="nav-btn large js-pointer-large" href="index.html">
-							<span class="nav-btn__inner" data-text="Explore">Services</span>
+						<a class="nav-btn large js-animsition-link js-pointer-large" href="index.html">
+							<span class="nav-btn__inner" data-text="Services">Services</span>
 						</a>
 					</li><!-- nav-btn-box end -->
 
 					<!-- nav-btn-box start -->
 					<li class="nav-btn-box">
-						<a class="nav-btn large js-pointer-large" href="../about">
-							<span class="nav-btn__inner" data-text="Explore">About us</span>
+						<a class="nav-btn large js-animsition-link js-pointer-large" href="../about">
+							<span class="nav-btn__inner" data-text="About us">About us</span>
 						</a>
 					</li><!-- nav-btn-box end -->
 
 					<!-- nav-btn-box start -->
 					<li class="nav-btn-box">
-						<a class="nav-btn large js-pointer-large" href="../results">
-							<span class="nav-btn__inner" data-text="Explore">Results</span>
+						<a class="nav-btn large js-animsition-link js-pointer-large" href="../results">
+							<span class="nav-btn__inner" data-text="Results">Results</span>
 						</a>
 					</li><!-- nav-btn-box end -->
 
 					<!-- nav-btn-box start -->
 					<li class="nav-btn-box">
-						<a class="nav-btn large js-pointer-large" href="../clients">
-							<span class="nav-btn__inner" data-text="Explore">Who we serve</span>
+						<a class="nav-btn large js-animsition-link js-pointer-large" href="../clients">
+							<span class="nav-btn__inner" data-text="Who we serve">Who we serve</span>
 						</a>
 					</li><!-- nav-btn-box end -->
 
 					<!-- nav-btn-box start -->
 					<li class="nav-btn-box">
 						<a href="../contact/" class="nav-btn large js-animsition-link js-pointer-large">
-							<span class="nav-btn__inner" data-text="Explore">Contact</span>
+							<span class="nav-btn__inner" data-text="Contact">Contact</span>
 						</a>
 					</li><!-- nav-btn-box end -->
 				</ul><!-- menu-box end -->
@@ -201,8 +149,8 @@
 				<div class="nav-information">
 					<!-- Logo -->
 					<div>
-						<div class="hidden-box d-inline-block">
-							<a href="../index.html"><div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim" style="font-family: Broadsheet; font-size: 40px;">
+						<div class=" d-inline-block">
+							<a href="../index.html" class="js-animsition-link"><div class="headline-xxxxs nav-title-color nav-reveal-anim js-nav-anim" style="font-family: Broadsheet; font-size: 40px;">
 								MYSTERY
 							</div></a>
 						</div>	
@@ -221,10 +169,10 @@
 
 			</div><!-- pos-rel end -->
 		</nav><!-- navigation end -->
-		<main class="js-animsition-overlay" data-animsition-overlay="true">
+		<main class="js-animsition-overlay " data-animsition-overlay="true" id="scrollPane">
 
 			<!-- home slider start -->
-			<section id="up" class="pos-rel section-bg-dark-1 js-home-slider fullscreen-slider " >
+			<section id="up" class="pos-rel section-bg-dark-1 js-home-slider fullscreen-slider " style="overflow-x: hidden;"  id="scrollPane">
 				<!-- swiper-wrapper start -->
 				<div class="swiper-wrapper">
 					<!-- swiper-slide start -->
@@ -234,27 +182,26 @@
 						<div class="bg-overlay-black"></div>-->
 
 						<!-- content start -->
-						<div class="flex-min-height-100vh pos-rel " data-swiper-parallax-x="30%">
+						<div class="flex-min-height-100vh pos-rel" data-swiper-parallax-x="30%" >
 							<div class="container small padding-top-bottom-120">
-								<p class="services-hero-subtitle anim-fade ">Let's take a tour</p>
+								<p class="services-hero-subtitle anim-slide tr-delay-03 ">Let's take a tour</p>
 								<h2 class="headline-xl-broadsheet text-center services-hero-title">
-									<span class="hidden-box d-block">
-										<span class="anim-slide ">HOW WE</span>
+									<span class="d-block">
+										<span class="anim-slide tr-delay-03 ">HOW WE</span>
 									</span>
-									<span class="hidden-box d-block">
-										<span class="anim-slide ">DO IT</span>
+									<span class="d-block">
+										<span class="anim-slide tr-delay-03 ">DO IT</span>
 									</span>
 								</h2>
-								<p class="services-hero-info anim-fade">
+								<p class="services-hero-info anim-slide tr-delay-03">
 								creates concepts from the ground up, can work in partnership with aspiring entrepreneurs in need of strategic support or
 								institutional investor, developers, corporate occupiers
 								looking to acquire or manage real estate operations
 								with food and beverage components. 
 								</p>
-								
-								<a href="#point" class="js-pointer-large js-smooth-scroll srvc-trgBtn">
-									<img src="../images/icons/arrow-down.svg" class="services-arrow srvc-trgBtn"/><br>
-									<span class="services-arrow-info srvc-trgBtn">EXPLORE</span>
+								<a href="./services.html" class="js-pointer-large srvc-trgBtn  js-animsition-link ">
+									<img src="../images/icons/arrow-down.svg" class="services-arrow srvc-trgBtn anim-slide tr-delay-03" style="transform: translate(-50%,-50%);"/><br>
+									<span class="services-arrow-info srvc-trgBtn anim-slide tr-delay-03" style="transform: translate(-50%,-50%);">EXPLORE</span>
 								</a>
 							</div>
 						</div><!-- content end -->
@@ -263,243 +210,13 @@
 					
 				</div><!-- swiper-wrapper end -->
 			</section><!-- home slider end -->
-
-			<div id="content-block">
-
-				<div class="content-push">
-	
-					<div class="parallax-slide" id="point" data-aos="fade"
-						data-aos-offset="200"
-						data-aos-delay="50"
-						data-aos-duration="1000"
-						data-aos-easing="ease-in-out"
-						data-aos-mirror="true"
-						data-aos-once="false">
-						<div class="parallax-clip">
-							<div class="fixed-parallax" style="background-image: url(../images/backgrounds/service-1.webp);">		
-								<h2 style="height: 33.33%;"> </h2>
-								<h2 class="heading-active" style="height: 33.33%;" data-aos="fade"
-								data-aos-offset="100"
-								data-aos-delay="100"
-								data-aos-duration="1000"
-								data-aos-easing="ease-in-out"
-								data-aos-mirror="true"
-								data-aos-once="false"><span>Site Location</span></h2>
-								<h2 class="heading-not-active" style="height: 33.33%;" data-aos="fade"
-								data-aos-offset="100"
-								data-aos-delay="100"
-								data-aos-duration="1000"
-								data-aos-easing="ease-in-out"
-								data-aos-mirror="true"
-								data-aos-once="false"><span>Menu & Recipe</span></h2>
-							</div>
-						</div>
-					</div>
-					<div class="parallax-slide" id="point" data-aos="fade"
-						data-aos-offset="200"
-						data-aos-delay="50"
-						data-aos-duration="1000"
-						data-aos-easing="ease-in-out"
-						data-aos-mirror="true"
-						data-aos-once="false">
-						<div class="parallax-clip">
-							<div class="fixed-parallax" style="background-image: url(../images/backgrounds/service-2.webp);">		
-								<h2 class="heading-not-active" style="height: 33.33%;"><span>Location</span></h2>
-								<h2 class="heading-active" style="height: 33.33%;" data-aos="fade"
-								data-aos-offset="100"
-								data-aos-delay="100"
-								data-aos-duration="1000"
-								data-aos-easing="ease-in-out"
-								data-aos-mirror="true"
-								data-aos-once="false"><span>Menu & Recipen</span></h2>
-								<h2 class="heading-not-active" style="height: 33.33%;" data-aos="fade"
-								data-aos-offset="100"
-								data-aos-delay="100"
-								data-aos-duration="1000"
-								data-aos-easing="ease-in-out"
-								data-aos-mirror="true"
-								data-aos-once="false"><span>Menu & Recipe</span></h2>
-							</div>
-						</div>
-					</div>
-	
-					<div class="parallax-slide" data-aos="fade"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-			data-aos-mirror="true"
-			data-aos-once="false">
-						<div class="parallax-clip">
-							<div class="fixed-parallax" style="background-image: url(../images/backgrounds/service-3.webp);">		
-							</div>
-						</div>
-					</div>
-	
-					<div class="parallax-slide" data-aos="fade"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-			data-aos-mirror="true"
-			data-aos-once="false">
-						<div class="parallax-clip">
-							<div class="fixed-parallax" style="background-image: url(../images/backgrounds/service-4.webp);">		
-							</div>
-						</div>
-					</div>
-					
-					<div class="parallax-slide" data-aos="fade"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-			data-aos-mirror="true"
-			data-aos-once="false">
-						<div class="parallax-clip">
-							<div class="fixed-parallax" style="background-image: url(../images/backgrounds/service-5.webp);">		
-							</div>
-						</div>
-					</div>
-
-					<div class="parallax-slide" data-aos="fade"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-			data-aos-mirror="true"
-			data-aos-once="false">
-						<div class="parallax-clip">
-							<div class="fixed-parallax" style="background-image: url(../images/backgrounds/service-6.webp);">		
-							</div>
-						</div>
-					</div>
-
-					<div class="parallax-slide" data-aos="fade"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-			data-aos-mirror="true"
-			data-aos-once="false">
-						<div class="parallax-clip">
-							<div class="fixed-parallax" style="background-image: url(../images/backgrounds/service-7.webp);">		
-								
-							</div>
-						</div>
-					</div>
-
-					<div class="parallax-slide" data-aos="fade"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-			data-aos-mirror="true"
-			data-aos-once="false">
-						<div class="parallax-clip">
-							<div class="fixed-parallax" style="background-image: url(../images/backgrounds/service-8.webp); background-attachment: scroll !important;">		
-							</div>
-						</div>
-					</div>
-
-					<div class="parallax-slide" data-aos="fade"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-			data-aos-mirror="true"
-			data-aos-once="false">
-						<div class="parallax-clip">
-							<div class="fixed-parallax" style="background-image: url(../images/backgrounds/service-8.webp); background-attachment: scroll !important;">		
-							</div>
-						</div>
-					</div>
-	
-				</div>
-			</div>
-
-			<!-- home slider start -->
-			<section id="up" class="pos-rel section-bg-dark-1 js-home-slider fullscreen-slider " data-aos="fade"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-			data-aos-mirror="true"
-			data-aos-once="false">
-				<!-- swiper-wrapper start -->
-				<div class="swiper-wrapper">
-					<!-- swiper-slide start -->
-					<div class="swiper-slide">
-						<div class="js-parallax-slide-bg bg-img-cover" style="background-image:url(../images/backgrounds/services-hero.webp)"></div>
-						<!-- bg-overlay 
-						<div class="bg-overlay-black"></div>-->
-
-						<!-- content start -->
-						<div class="flex-min-height-100vh pos-rel " data-swiper-parallax-x="30%">
-							<div class="container small padding-top-bottom-120">
-								<p class="services-hero-subtitle anim-fade ">Let's take a tour</p>
-								<h2 class="headline-xl-broadsheet text-center services-hero-title">
-									<span class="hidden-box d-block">
-										<span class="anim-slide ">HOW WE</span>
-									</span>
-									<span class="hidden-box d-block">
-										<span class="anim-slide ">DO IT</span>
-									</span>
-								</h2>
-								<p class="services-hero-info anim-fade">
-								creates concepts from the ground up, can work in partnership with aspiring entrepreneurs in need of strategic support or
-								institutional investor, developers, corporate occupiers
-								looking to acquire or manage real estate operations
-								with food and beverage components. 
-								</p>
-								
-								<a href="#point" class="js-pointer-large js-smooth-scroll srvc-trgBtn">
-									<img src="../images/icons/arrow-down.svg" class="services-arrow srvc-trgBtn"/><br>
-									<span class="services-arrow-info srvc-trgBtn">EXPLORE</span>
-								</a>
-							</div>
-						</div><!-- content end -->
-					</div><!-- swiper-slide end -->
-					
-					
-				</div><!-- swiper-wrapper end -->
-			</section><!-- home slider end -->
-	
 		</main>
 		
 		
 		
 		<!-- scripts -->
 		<script src="../js/plugins.js"></script>
-		<script src="../js/footer-reveal.js"></script>
 		<script src="../js/main.js"></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>
-			AOS.init();
-		</script>
-		<!-- <script>
-			gsap.registerPlugin(ScrollTrigger);
-
-			gsap.utils.toArray(".panel").forEach((panel, i) => {
-			ScrollTrigger.create({
-				trigger: panel,
-				start: "top top", 
-				scrub: true,
-				pin: true, 
-				pinSpacing: false
-			});
-			});
-
-
-			ScrollTrigger.create({
-			snap: {
-				snapTo: 1,
-				duration: 0.3
-			}
-			});
-		</script> -->
-
-
 		
 	</body>
 </html>
