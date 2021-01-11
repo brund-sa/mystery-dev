@@ -1,3 +1,8 @@
+/* 2021 update */
+.nav-information-social{
+	display: none;
+}
+
 .scroll-to-btn {
 	z-index: 999;
 }
@@ -13580,7 +13585,8 @@ video#myVideo {
     left: 50%;
     transform: translate(-50% , -50%);
     background-size: contain;
-    max-width: 100%;
+	max-width: 100%;
+	width: 100%;
 }
 
 .result-hero-header-2 {
